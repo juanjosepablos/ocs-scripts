@@ -6,7 +6,7 @@ taskkill /F /IM Firefox.exe /IM iexplore.exe
 ::AskToolBar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
 ::Browser Protect
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693}
+"%ALLUSERSPROFILE%\Datos de programa\BrowserProtect\2.6.1125.80\{c16c1ccb-7046-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=693137bede806a27 /um
 ::BrowserCompanion
 "%PROGRAMFILES%\BrowserCompanion\uninstall.exe"
 ::Babylon
@@ -16,11 +16,11 @@ FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\*") DO %%V\uninstall.exe
 ::Bubble
 "%PROGRAMFILES%\Bubble_Dock_Toolbar_ES.B\uninstall.exe" toolbar
 ::CLARO
-FOR /D %%V IN ("%PROGRAMFILES%\Claro LTD\claro\*")DO %%V\GUninstaller.exe -uprtc -aname='Claro Toolbar' -bname=clr -key "claro"
+FOR /D %%V IN ("%PROGRAMFILES%\Claro LTD\claro\*") DO %%V\GUninstaller.exe -uprtc -aname='Claro Toolbar' -bname=clr -key "claro"
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {069B290F-5398-4629-A009-85B4BCB4B1B9}
 ::Delta toolbar
-FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %V\uninstall.exe
-FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %V\uninstall.exe -uprtc /tbGen= -key "delta"
+FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %%V\uninstall.exe
+FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %%V\uninstall.exe -uprtc /tbGen= -key "delta"
 "%APPDATA%\BabSolution\Shared\GUninstaller.exe" -key "Delta Chrome Toolbar" -rmkey -ask
 ::Desk 365
 "%PROGRAMFILES%\Desk 365\eUninstall.exe" 
@@ -45,7 +45,7 @@ FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %V\uninstall.exe -uprtc /tbGen
 :: IncrediBar
 "%PROGRAMFILES%\IB Updater\unins000.exe" /VERYSILENT
 ::FACEBOOK MOODS
-FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*) %%V\uninstall.exe"
+FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*") DO %%V\uninstall.exe
 ::msn toolbar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4BEB7BEF-6A3C-4A4A-A0C5-8A8E8F07ED1C}
 ::Messenget Plus Smartbar
@@ -72,7 +72,7 @@ FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*) %%V\uninstall.exe"
 ::Searchqu Toolbar
 "%PROGRAMFILES%\Searchqu Toolbar\uninstall.exe" /s
 ::Softonic
-FOR /D %%V IN ("%PROGRAMFILES%\Softonic\Softonic\*) %%V\uninstall.exe" /s
+FOR /D %%V IN ("%PROGRAMFILES%\Softonic\Softonic\*") DO %%V\uninstall.exe /s
 "%PROGRAMFILES%\softonic.com4\uninstall.exe"
 ::Supreme Savings
 "%PROGRAMFILES%\Supreme Savings\Uninstall.exe" /s
