@@ -2,4 +2,4 @@
 ::HOME: http://www.libreoffice.org/
 
 
-msiexec /qn /i libreoffice_4.0.2_win_x86_install.msi
+msiexec /qn /l* %TEMP%\libreoffice.txt /i libreoffice_4.0.3_win_x86_install.msi /norestart /passive
