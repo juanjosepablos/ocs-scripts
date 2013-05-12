@@ -5,6 +5,8 @@ taskkill /F /IM Firefox.exe /IM iexplore.exe
 "%PROGRAMFILES%\AVG Secure Search\UNINSTALL.exe" /UNINSTALL
 ::AskToolBar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
+::Bing
+MsiExec.exe /qn /norestart /x{C28D96C0-6A90-459E-A077-A6706F4EC0FC}
 ::Browser Protect
 "%ALLUSERSPROFILE%\Datos de programa\BrowserProtect\2.6.1125.80\{c16c1ccb-7046-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=693137bede806a27 /um
 ::BrowserCompanion
@@ -103,4 +105,5 @@ FOR /D %%V IN ("%PROGRAMFILES%\Softonic\Softonic\*") DO %%V\uninstall.exe /s
 "%ALLUSERSPROFILE%\Datos de programa\Tarma Installer\{889DF117-14D1-44EE-9F31-C5FB5D47F68B}\Setup.exe" /remove /q
 
 reg export HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall uninstall.reg
+reg export HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall uninstall7.reg
 
