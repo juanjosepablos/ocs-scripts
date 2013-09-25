@@ -1,4 +1,4 @@
-:: OPTIONAL: Install Thunderbird 10.0.12esr
+:: OPTIONAL: Install Thunderbird esr
 
-thunderbird-1705esr-esn.exe -ms -ira
+thunderbird-1708esr-esn.exe -ms -ira
 
