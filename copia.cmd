@@ -48,19 +48,22 @@ REM       rsync -r /cygdrive/c/doc/ remotehost::module/doc
 REM
 REM Rsync is a very powerful tool. Please look at documentation for other options. 
 REM
-SET EXTERNO=F
-
-
-:: MONTA UNIDAD DE REDA
-NET USE %EXTERNO%: \\casa\tmp
-IF NOT EXIST %EXTERNO%:\%COMPUTERNAME% MD %EXTERNO%:\%COMPUTERNAME%
 
 SET RSYNC_BIN=%SYSTEMDRIVE%\copia\bin\rsync.exe
-SET DENTRO=/cygdrive/C/Documents and Settings/%USERNAME%
+:: CONVERT \ TO /
+SET USERHOME=%HOMEPATH%
+SET USERHOME=%USERHOME:\=/%
+
+SET EXTERNO=F
+
+:: NETWORK SHARE
+NET USE %EXTERNO%: \\casa\tmp
+
+::CREATE A FOLDER FOR THE COMPUTER
+IF NOT EXIST %EXTERNO%:\%COMPUTERNAME% MD %EXTERNO%:\%COMPUTERNAME%
+
+SET DENTRO=/cygdrive/c/%USERHOME%
 SET FUERA=/cygdrive/%EXTERNO%/%COMPUTERNAME%/%USERNAME%
 
-%RSYNC_BIN% -rltv --delete --modify-window=1 "%DENTRO%/Mis Documentos" %FUERA%
-%RSYNC_BIN% -rtlv --delete --modify-window=1 "%DENTRO%/Escritorio" %FUERA%
-%RSYNC_BIN% -rtlv --delete --modify-window=1 "%DENTRO%/Favoritos" %FUERA%
-%RSYNC_BIN% -rtlv --delete --modify-window=1 "%DENTRO%/Datos de Programa/Mozilla" %FUERA%
-%RSYNC_BIN% -rtlv --delete --modify-window=1 "%DENTRO%/Datos de Programa/Thunderbird" %FUERA%
+FOR %%V IN (Desktop,Documents,Downloads,Favorites,Music,Pictures,Videos,"%APPDATA%/Mozilla","%APPDATA%/Thunderbird") DO (%RSYNC_BIN% -av --chmod=ugo=rwX --delete --modify-window=1 "%DENTRO%/%%V" %FUERA%)
+FOR %%V IN ("Mis Documentos",Escritorio,Favoritos,"Datos de Programa/Mozilla","Datos de Programa/Thunderbird") DO (%RSYNC_BIN% -av --chmod=ugo=rwX  --delete --modify-window=1 "%DENTRO%/%%V" %FUERA%)
