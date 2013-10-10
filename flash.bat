@@ -6,7 +6,8 @@
 echo AutoUpdateDisable=1 > %SYSTEMROOT%\System32\Macromed\Flash\mms.cfg
 
 :: ActiveX version for Internet Explorer
-install_flash_player_ax_11.8.800.175.exe -install
+
+install_flash_player_ax_11.9.900.117.exe -install
 
 :: Version for every other browser
-install_flash_player_11.8.800.168.exe -install
+install_flash_player_11.9.900.117.exe -install
