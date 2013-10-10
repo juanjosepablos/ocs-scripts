@@ -4,4 +4,4 @@
 
 @Echo off
 
-vlc-2.0.5-win32.exe /S
+vlc-2.1.0-win32.exe /S
