@@ -1,7 +1,7 @@
 :: OPTIONAL: Install Adobe Reader 
 
 :: This is the actual installer, added the patch too
-AdbeRdr11003_es_ES.exe /sAll /rps /msi /quiet /norestart ALLUSERS=1 EULA_ACCEPT=YES
+AdbeRdr11004_es_ES.exe /sAll /rps /msi /quiet /norestart ALLUSERS=1 EULA_ACCEPT=YES
 
 
 :: Please do not start anything unless necesary
