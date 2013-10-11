@@ -1,6 +1,6 @@
 ::OPTIONAL: Install Ccleaner
 ::HOME: http://www.piriform.com/CCLEANER
 
-ccsetup405.exe /S
+ccsetup406.exe /S
 "%ProgramFiles%\CCleaner\CCleaner.exe" /AUTO
-del "%allusersprofile%\Escritorio\CCleaner.lnk"
+IF EXIST  "%allusersprofile%\Escritorio\CCleaner.lnk" del "%allusersprofile%\Escritorio\CCleaner.lnk"
