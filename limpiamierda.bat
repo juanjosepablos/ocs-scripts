@@ -7,11 +7,16 @@ taskkill /F /IM Firefox.exe /IM iexplore.exe
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
 ::Bing
 MsiExec.exe /qn /norestart /x{C28D96C0-6A90-459E-A077-A6706F4EC0FC}
+::BrowserDefender
+"%ALLUSERSPROFILE%\Datos de programa\BrowserDefender\2.6.1339.144\{c16c1ccb-7046-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=396633eb8dd13274 /um
 ::Browser Protect
 "%ALLUSERSPROFILE%\Datos de programa\BrowserProtect\2.6.1125.80\{c16c1ccb-7046-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=693137bede806a27 /um
 ::BrowserCompanion
 "%PROGRAMFILES%\BrowserCompanion\uninstall.exe"
+::Browser Manager
+"%ProgramData%\Browser Manager\2.6.1339.144\{16cdff19-861d-48e3-a751-d99a27784753}\uninstall.exe"
 ::Babylon
+MsiExec.exe /qn /norestart /x {83AA2913-C123-4146-85BD-AD8F93971D39}
 FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\*") DO %%V\uninstall.exe
 "%PROGRAMFILES%\Babylon\Babylon-Pro\Utils\uninstbb.exe"
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {E55E7026-EF2A-4A17-AAA7-DB98EA3FD1B1}
@@ -19,6 +24,7 @@ FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\*") DO %%V\uninstall.exe
 "%PROGRAMFILES%\Bubble_Dock_Toolbar_ES.B\uninstall.exe" toolbar
 ::CLARO
 FOR /D %%V IN ("%PROGRAMFILES%\Claro LTD\claro\*") DO %%V\GUninstaller.exe -uprtc -aname='Claro Toolbar' -bname=clr -key "claro"
+FOR /D %%V IN ("%PROGRAMFILES(x86)%\Claro LTD\claro\*") DO %%V\GUninstaller.exe -uprtc -aname='Claro Toolbar' -bname=clr -key "claro"
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {069B290F-5398-4629-A009-85B4BCB4B1B9}
 ::Delta toolbar
 FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %%V\uninstall.exe
@@ -35,15 +41,19 @@ FOR /D %%V IN ("%PROGRAMFILES%\Delta\delta\*") DO %%V\uninstall.exe -uprtc /tbGe
 ::GamingWonderland Toolbar
 "rundll32 %PROGRAMFILES%\GAMING~1\bar\1.bin\gtBar.dll,O"
 :: Google toolbar
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {18455581-E099-4BA8-BC6B-F34B2F06600C}
+"%PROGRAMFILES%\Google\Google Toolbar\Component\GoogleToolbarManager_80ACC8E3971CD605.exe" /uninstall
 "%PROGRAMFILES%\Google\Google Toolbar\Component\GoogleToolbarManager_94DDE1EDD1CDF6A3.exe" /uninstall
+"%PROGRAMFILES(x86)%\Google\Google Toolbar\Component\GoogleToolbarManager_94DDE1EDD1CDF6A3.exe" /uninstall
+MsiExec.exe /qn /norestart /x {18455581-E099-4BA8-BC6B-F34B2F06600C}
+MsiExec.exe /qn /norestart /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2}
 ::Hotspot Shield
 "%PROGRAMFILES%\Hotspot Shield\uninstall.exe"
 ::IB Updater Service
 "C:\Windows\system32\WNLT\Installation\uninstaller.exe"
 ::Iminent
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4BD8E034-E0F4-4509-A753-467A8E854CD8}
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {A76AA284-E52D-47E6-9E4F-B85DBF8E35C3}
+MsiExec.exe /qn /norestart /x {4BD8E034-E0F4-4509-A753-467A8E854CD8}
+MsiExec.exe /qn /norestart /x {A76AA284-E52D-47E6-9E4F-B85DBF8E35C3}
+MsiExec.exe /qn /norestart /x {5CDCDBCD-119A-4AE1-9C55-B816DBBE4245}
 :: IncrediBar
 "%PROGRAMFILES%\IB Updater\unins000.exe" /VERYSILENT
 ::FACEBOOK MOODS
