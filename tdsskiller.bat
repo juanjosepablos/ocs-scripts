@@ -1,1 +1,1 @@
-tdsskiller.exe -silent -l %SYSTEMROOT%\tdsskiller.log
+tdsskiller.exe -silent -accepteula -l %SYSTEMROOT%\tdsskiller.log
