@@ -109,10 +109,11 @@ taskkill /F /IM iexplore.exe /IM firefox.exe /IM jqs.exe
 %SYSTEMROOT%\SYSTEM32\msiexec /qn /norestart /x {26A24AE4-039D-4CA4-87B4-2F83217021FF}
 %SYSTEMROOT%\SYSTEM32\msiexec /qn /norestart /x {26A24AE4-039D-4CA4-87B4-2F83217025FF}
 %SYSTEMROOT%\SYSTEM32\msiexec /qn /norestart /x {26A24AE4-039D-4CA4-87B4-2F83217040FF}
+%SYSTEMROOT%\SYSTEM32\msiexec /qn /norestart /x {26A24AE4-039D-4CA4-87B4-2F83217045FF}
 
 :: Then install latest Java 1.7
 ::INSTALL_JAVA 
-jre-7u40-windows-i586.exe /s /L %TEMP%\jre-7u40.log  REBOOT=ReallySuppress JAVAUPDATE=0 WEBSTARTICON=0
+jre-7u45-windows-i586.exe /s /L %TEMP%\jre-7u45.log  REBOOT=ReallySuppress JAVAUPDATE=0 WEBSTARTICON=0
 
 :: Uninstall Java AutoUpdate
 %SYSTEMROOT%\SYSTEM32\msiexec /qn /x {4A03706F-666A-4037-7777-5F2748764D10}
