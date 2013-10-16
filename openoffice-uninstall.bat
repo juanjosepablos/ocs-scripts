@@ -39,4 +39,5 @@ msiexec /qn /norestart /x {7DA1C06F-C913-46C7-8A0F-DA2CBA17EA1D}
 ::StarOffice 8
 msiexec /qn /norestart /x {4BC1CB2B-FDCE-4DB4-A557-BA8127569B0D}
 msiexec /qn /norestart /x {9510AB97-A36C-4352-8725-E72E5528FA1B}
-
+msiexec /qn /norestart /x {9510AB97-A36C-4352-8725-E72E5528FA1B}
+msiexec /qn /norestart /x {D3737623-7FB5-443C-BA4A-023F2D2BC5A4}
