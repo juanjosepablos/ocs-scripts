@@ -1,5 +1,8 @@
 ::Remove OpenOffice
 
+::OpenOffice.org 2.0 
+msiexec /qn /norestart /x {75852F49-2CAF-443F-B7C2-53DE5847DE56}
+msiexec /qn /norestart /x {015766A8-EC67-4DCF-9163-3E973C139357} 
 ::OpenOffice.org 2.3 
 msiexec /qn /norestart /x {138049E9-E220-4410-BF0C-B35D26FF9EBD}
 msiexec /qn /norestart /x {83C03FBE-4492-4133-BBAB-421CD88ADA32}
