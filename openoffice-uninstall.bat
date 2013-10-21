@@ -26,11 +26,13 @@ msiexec /qn /norestart /x {43A650AA-D1DC-4C52-8819-D7848B3A08DA
 msiexec /qn /norestart /x {D765F1CE-5AE5-4C47-B134-AE58AC474740}
 msiexec /qn /norestart /x {A01E0232-CA9E-4FA2-BAA1-39358D753353}
 
+:: OpenOffice 3.2
+msiexec /qn /norestart /x {76896231-3040-4D77-B0D4-87D2256AC0CB}
 :: OpenOffice 3.2.0-12
-msiexec /qn /norestart /x {CC5CC633-D711-48A4-A812-9ED64BC47009}
 msiexec /qn /norestart /x {60CE6B15-E8DC-4096-83FA-5D8DE8B9ED5B}
 msiexec /qn /norestart /x {899BA88D-139C-4247-BE38-45C9B3981B92}
 msiexec /qn /norestart /x {97B3824E-B2D2-4C49-A860-BCA56F10B040}
+msiexec /qn /norestart /x {CC5CC633-D711-48A4-A812-9ED64BC47009}
 msiexec /qn /norestart /x {DFFC0648-BC4B-47D1-93D2-6CA6B9457641}
 
 :: OpenOffice.org 3.3 
