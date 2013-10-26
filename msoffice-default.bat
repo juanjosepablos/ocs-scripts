@@ -8,4 +8,4 @@ IF EXIST "%OFFICE11_HOME%\powerpnt.exe" "%OFFICE11_HOME%\excel.exe" /regserver
 SET OFFICE12_HOME=%ProgramFiles%\Microsoft Office\OFFICE12
 IF EXIST "%OFFICE12_HOME%\winword.exe"  "%OFFICE12_HOME%\winword.exe" /r
 IF EXIST "%OFFICE12_HOME%\excel.exe"    "%OFFICE12_HOME%\excel.exe" /regserver
-IF EXIST "%OFFICE12_HOME%\powerpnt.exe" "%OFFICE12_HOME%\excel.exe" /regserver
+IF EXIST "%OFFICE12_HOME%\powerpnt.exe" "%OFFICE12_HOME%\powerpnt.exe" /regserver
