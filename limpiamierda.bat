@@ -5,6 +5,7 @@ taskkill /F /IM Firefox.exe /IM iexplore.exe
 "%PROGRAMFILES%\AVG Secure Search\UNINSTALL.exe" /UNINSTALL
 ::AskToolBar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4F524A2D-5637-006A-76A7-A758B70C0600}
 ::Bing
 MsiExec.exe /qn /norestart /x{C28D96C0-6A90-459E-A077-A6706F4EC0FC}
 ::BrowserDefender
@@ -66,6 +67,8 @@ FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*") DO %%V\uninstall.exe
 "%PROGRAMFILES%\Offerbox\uninstaller.exe" /s
 ::Optimizer Pro
 "%PROGRAMFILES%\Optimizer Pro\unins000.exe" /VERYSILENT
+::PDFFORGE Toolbar
+MsiExec.exe /qn /norestart  /X {199624B4-6BC0-48C2-AB7E-9AB90B249CD7}
 ::PC Performer
 "%PROGRAMFILES%\PC Performer\unins000.exe" /VERYSILENT
 ::PricePeep
