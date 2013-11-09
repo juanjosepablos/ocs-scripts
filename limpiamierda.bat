@@ -8,8 +8,12 @@ MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
 ::AskToolBar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4F524A2D-5637-006A-76A7-A758B70C0600}
+::BitGuard
+"%ALLUSERSPROFILE%\Datos de programa\BitGuard\2.7.1769.27\{c16c1ccb-1111-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /um
 ::Bing
 MsiExec.exe /qn /norestart /x{C28D96C0-6A90-459E-A077-A6706F4EC0FC}
+::Bueno Search
+%APPDATA%\BabSolution\Shared\GUninstaller.exe" -key "Bueno Chrome Toolbar" -rmkey -rmbus "Bueno Chrome Toolbar" -ask -plgdll NTRedirect -nontfy
 ::BrowserDefender
 "%ALLUSERSPROFILE%\Datos de programa\BrowserDefender\2.6.1339.144\{c16c1ccb-7046-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=396633eb8dd13274 /um
 ::Browser Protect
@@ -57,11 +61,14 @@ MsiExec.exe /qn /norestart /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2}
 MsiExec.exe /qn /norestart /x {4BD8E034-E0F4-4509-A753-467A8E854CD8}
 MsiExec.exe /qn /norestart /x {5CDCDBCD-119A-4AE1-9C55-B816DBBE4245}
 MsiExec.exe /qn /norestart /x {81FCC50B-950F-4063-8E4A-D99CAA4FBB1F}
+MsiExec.exe /qn /norestart /x {973DD1DF-D51D-46BB-B6AC-D56617D133C1}
 MsiExec.exe /qn /norestart /x {A76AA284-E52D-47E6-9E4F-B85DBF8E35C3}
 :: IncrediBar
 "%PROGRAMFILES%\IB Updater\unins000.exe" /VERYSILENT
 ::FACEBOOK MOODS
 FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*") DO %%V\uninstall.exe
+::Movistar
+MsiExec.exe /qn /norestart /x {689FCC19-5582-4D88-BDC6-490EB7DAFB82}
 ::msn toolbar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4BEB7BEF-6A3C-4A4A-A0C5-8A8E8F07ED1C}
 ::Messenget Plus Smartbar
