@@ -1,4 +1,4 @@
 :: OPTIONAL: Install Thunderbird esr
 
-thunderbird-1708esr-esn.exe -ms -ira
+thunderbird-1710esr-esn.exe -ms -ira
 
