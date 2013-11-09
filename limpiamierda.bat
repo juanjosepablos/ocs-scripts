@@ -1,6 +1,8 @@
 ::Browsers out
 taskkill /F /IM Firefox.exe /IM iexplore.exe
 
+::Ask Toolbar
+MsiExec.exe /qn /norestart /x {86D4B82A-ABED-442A-BE86-96357B70F4FE}
 ::AVG Toolbar
 "%PROGRAMFILES%\AVG Secure Search\UNINSTALL.exe" /UNINSTALL
 ::AskToolBar
@@ -53,8 +55,9 @@ MsiExec.exe /qn /norestart /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2}
 "C:\Windows\system32\WNLT\Installation\uninstaller.exe"
 ::Iminent
 MsiExec.exe /qn /norestart /x {4BD8E034-E0F4-4509-A753-467A8E854CD8}
-MsiExec.exe /qn /norestart /x {A76AA284-E52D-47E6-9E4F-B85DBF8E35C3}
 MsiExec.exe /qn /norestart /x {5CDCDBCD-119A-4AE1-9C55-B816DBBE4245}
+MsiExec.exe /qn /norestart /x {81FCC50B-950F-4063-8E4A-D99CAA4FBB1F}
+MsiExec.exe /qn /norestart /x {A76AA284-E52D-47E6-9E4F-B85DBF8E35C3}
 :: IncrediBar
 "%PROGRAMFILES%\IB Updater\unins000.exe" /VERYSILENT
 ::FACEBOOK MOODS
