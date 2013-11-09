@@ -10,6 +10,6 @@
 :: EmailPluginsFea:     Email Plugins Feature
 :: fea_Client:          AVG Remote admin
 
-avg_free_%PROCESSOR_ARCHITECTURE%_all_2013_2899a6087.exe /UILevel=Silent ^
+avg_free_%PROCESSOR_ARCHITECTURE%_all_2014_4117a6638.exe /UILevel=Silent ^
 /InstallToolbar=0 /InstallSidebar=0 /ChangeBrowserSearchProvider=0  /DontRestart ^
 /RemoveFeatures=fea_IDP;LinkScnFea;fea_SrchSrf__Search;fea_SrchSrf__Surf;fea_OnlnSc;EmailPluginsFea;fea_Client;
