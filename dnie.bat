@@ -1,9 +1,4 @@
-:: OPTIONAL: DNIE version 6.0.2
-:: HOME:http://www.dnielectronico.es/descargas/windows.html
+::OPTIONAL: Install DNIE 9_1_1
+::HOME:http://www.dnielectronico.es/descargas/windows.html
 
-@echo off
-
-DNIe_v6.0.2.msi /qn
-
-:: Uninstall String
-::MsiExec.exe /X {0EEEC9BE-0571-4AD9-9F5F-2957EA414D3C} /qn
+"DNIe_v9_1_1_(32_bits).exe" /l1034 /v"/qn TIME=30 REINICIAR=false"
