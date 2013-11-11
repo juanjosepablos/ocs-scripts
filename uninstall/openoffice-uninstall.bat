@@ -37,6 +37,7 @@ msiexec /qn /norestart /x {DFFC0648-BC4B-47D1-93D2-6CA6B9457641}
 
 :: OpenOffice.org 3.3 
 msiexec /qn /norestart /x {3E171899-0175-47CC-84C4-562ACDD4C021}
+msiexec /qn /norestart /x {4B930AE3-61C6-4D02-A9D4-84F4ACBCEC25}
 
 :: OpenOffice.org 3.4 
 msiexec /qn /norestart /x {7DA1C06F-C913-46C7-8A0F-DA2CBA17EA1D}
