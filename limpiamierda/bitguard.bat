@@ -1,0 +1,6 @@
+::Bitguard
+IF EXIST "%ALLUSERSPROFILE%\Datos de programa\BitGuard" SET BITGUARD_BIN=%ALLUSERSPROFILE%\Datos de programa\BitGuard\2.7.1769.27
+IF EXIST "%ALLUSERSPROFILE%\BitGuard" SET BITGUARD_BIN=%ALLUSERSPROFILE%\BitGuard\2.7.1769.27
+
+FOR /D %%V IN ("%BITGUARD_BIN%\*") DO %%V\uninstall.exe /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /um
+
