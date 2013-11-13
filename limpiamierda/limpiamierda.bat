@@ -126,6 +126,8 @@ FOR /D %%V IN ("%ALLUSERSPROFILE%\Datos de programa\Tarma Installer\*") DO %%V\s
 FOR /D %%V IN ("%ALLUSERSPROFILE%\Tarma Installer\*") DO %%V\setup.exe /remove /q0
 ::Wajam
 "%PROGRAMFILES%\Wajam\uninstall.exe" /s
+::Windows live toolbar
+MsiExec.exe /qn /norestart /X{020D8396-D6D9-4B53-A9A1-83C47E2E27AA}
 ::Yahoo Toolbar
 "%PROGRAMFILES%\Yahoo!\Common\UNYT_W~1.EXE" /s
 ::Yontoo
