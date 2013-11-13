@@ -1,6 +1,7 @@
 ::Browsers out
 taskkill /F /IM Firefox.exe /IM iexplore.exe
 
+pushd "%~dp0"
 start ask-toolbar.bat
 start avg-toolbar.bat
 ::Babylon
@@ -137,3 +138,4 @@ MsiExec.exe /qn /norestart /X{020D8396-D6D9-4B53-A9A1-83C47E2E27AA}
 reg export HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall uninstall.reg
 reg export HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall uninstall7.reg
 
+popd
