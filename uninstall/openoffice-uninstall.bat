@@ -32,6 +32,7 @@ msiexec /qn /norestart /x {A01E0232-CA9E-4FA2-BAA1-39358D753353}
 msiexec /qn /norestart /x {CC5CC633-D711-48A4-A812-9ED64BC47009}
 msiexec /qn /norestart /x {60CE6B15-E8DC-4096-83FA-5D8DE8B9ED5B}
 msiexec /qn /norestart /x {899BA88D-139C-4247-BE38-45C9B3981B92}
+msiexec /qn /norestart /x {8C851F00-4FC0-40BD-8B69-EACDF4980D8B}
 msiexec /qn /norestart /x {97B3824E-B2D2-4C49-A860-BCA56F10B040}
 msiexec /qn /norestart /x {DFFC0648-BC4B-47D1-93D2-6CA6B9457641}
 
