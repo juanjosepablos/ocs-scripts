@@ -6,6 +6,7 @@ MsiExec.exe /qn /x {205C6BDD-7B73-42DE-8505-9A093F35A238}
 
 ::toolbar
 MsiExec.exe /qn /x {21DD56B6-A7C1-4EA6-BC53-28A63A4A1820}
+MsiExec.exe /qn /x {020D8396-D6D9-4B53-A9A1-83C47E2E27AA}
 
 ::Live communications
 MsiExec.exe /qn /x {3175E049-F9A9-4A3D-8F19-AC9FB04514D1}
