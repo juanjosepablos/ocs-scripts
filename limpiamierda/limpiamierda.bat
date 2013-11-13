@@ -7,6 +7,7 @@ start avg-toolbar.bat
 ::Babylon
 MsiExec.exe /qn /norestart /x {83AA2913-C123-4146-85BD-AD8F93971D39}
 FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\*") DO %%V\uninstall.exe
+FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\BabylonToolbar\*") DO %%V\uninstall.exe
 "%PROGRAMFILES%\Babylon\Babylon-Pro\Utils\uninstbb.exe"
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {E55E7026-EF2A-4A17-AAA7-DB98EA3FD1B1}
 ::BitGuard
@@ -48,8 +49,12 @@ FOR /D %%V IN ("%PROGRAMFILES(x86)%\facemoods.com\facemoods\*") DO %%V\uninstall
 FOR /D %%V IN ("%PROGRAMFILES%\facemoods.com\facemoods\*") DO %%V\uninstall.exe
 ::FileOpener
 "%PROGRAMFILES%\Tweaks\FileOpener\uninstall.exe" /s
+::FUN MOODS
+FOR /D %%V IN ("%PROGRAMFILES%\Funmoods\funmoods\*") DO %%V\uninstall.exe
 ::GamingWonderland Toolbar
 "rundll32 %PROGRAMFILES%\GAMING~1\bar\1.bin\gtBar.dll,O"
+::Google Update
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x{A92DAB39-4E2C-4304-9AB6-BC44E68B55E2}
 start google-toolbar.bat
 ::Hotspot Shield
 "%PROGRAMFILES%\Hotspot Shield\uninstall.exe"
@@ -57,13 +62,21 @@ start google-toolbar.bat
 "C:\Windows\system32\WNLT\Installation\uninstaller.exe"
 ::Iminent
 star iminent-toolbar.bat
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {A6E71E28-43CB-423E-B415-B7C00D77902E}
+"%PROGRAM_FILES%\Iminent\inst\Bootstrapper\Bootstrapper.exe" uninstall
 ::IncrediBar
 "%PROGRAMFILES%\IB Updater\unins000.exe" /VERYSILENT
+::iLivid
+"%PROGRAMFILES%\iLivid\uninstall.exe"
 ::LyricsSay
 "%PROGRAMFILES(x86)%\LyricsSay-1\Uninstall.exe" /fromcontrolpanel=1
+::Mediago
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {A4F094CE-9B05-FB0C-DD73-A85DE5D8D283}
 ::MediaBar
 "%PROGRAMFILES%\Lphant Applications\MediaBar\uninstall.exe"
 "%PROGRAMFILES%\Lphant\unins000.exe" /SILENT
+::Memturbo4
+"%PROGRAMFILES%\MemTurbo 4\unins000.exe" /SILENT
 ::Messenget Plus Smartbar
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {8C267246-FA45-41D4-B1EA-9EB238C6D0FB}
 ::Movistar
@@ -73,6 +86,7 @@ MsiExec.exe /qn /norestart /x {689FCC19-5582-4D88-BDC6-490EB7DAFB82}
 ::MyPC Backup
 "%PROGRAMFILES%\MyPC Backup\uninst.exe"
 ::OfferBox
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {2C8574B5-6935-4FCE-860E-F4E8602378FF}
 "%PROGRAMFILES%\Offerbox\uninstaller.exe" /s
 ::Optimizer Pro
 "%PROGRAMFILES%\Optimizer Pro\unins000.exe" /VERYSILENT
@@ -100,18 +114,23 @@ MsiExec.exe /qn /norestart  /X {199624B4-6BC0-48C2-AB7E-9AB90B249CD7}
 "%PROGRAMFILES%\Searchqu Toolbar\uninstall.exe" /s
 ::Softonic
 FOR /D %%V IN ("%PROGRAMFILES%\Softonic\Softonic\*") DO %%V\uninstall.exe /s
-"%PROGRAMFILES%\softonic.com4\uninstall.exe"
+FOR /D %%V IN ("%PROGRAMFILES%\softonic.com*\") DO %%V\uninstall.exe /s
 ::Supreme Savings
 "%PROGRAMFILES%\Supreme Savings\Uninstall.exe" /s
 ::Saving Wave
 "%PROGRAMFILES%\Savings Wave\Uninstall.exe" /s
+:: shARES Toolbar
+"%ProgramFiles%\shARES\uninstall.exe"
 ::Sweet Packs
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {0110EF3B-85D7-4365-B585-4C521CFA9064}
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {0110EF3B-85D7-4365-B585-4C521CFA9064}
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {0965F857-DAAD-4F93-8054-0E2EC3C8C5B0}
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {4183178B-4D4E-48A7-9257-454BA90A760E}
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {7683B745-6060-41FD-AA75-0BBB383FEAD4}
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {774C0434-9948-4DEE-A14E-69CDD316E36C}
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {FB697452-8CA4-46B4-98B1-165C922A2EF3}
-%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {0110EF3B-85D7-4365-B585-4C521CFA9064}
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {A0C9DF2B-89B5-4483-8983-18A68200F1B4}
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {EA8FA6BE-29BE-4AF2-9352-841F83215EB0}
+%SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {FB697452-8CA4-46B4-98B1-165C922A2EF3}
 "%PROGRAMFILES%\sweetpacks bundle uninstaller\uninstaller.exe" "/appName=Sweetpacks Bundle Uninstaller"
 ::Thoosje Toolbar
 "%PROGRAMFILES%\Thoosje\uninstall.exe"
@@ -120,6 +139,8 @@ FOR /D %%V IN ("%PROGRAMFILES%\tutoriales*") DO "%%V\unins000.exe" /SILENT
 FOR /D %%V IN ("%PROGRAMFILES%\tutoriales*") DO "%%V\unins001.exe" /SILENT
 ::VAFPlayer
 %SYSTEMROOT%\SYSTEM32\MsiExec.exe /qn /norestart /x {EBE677C0-CBCB-4EBF-8098-E27E1B5271CF}
+::VFD-PMI
+"%ProgramFiles%\Object\vfd-pmi_uninstall.exe"
 ::Vuze ToolBar
 "%PROGRAMFILES%\Vuze_Remote\uninstall.exe" /s
 ::Web Cake
