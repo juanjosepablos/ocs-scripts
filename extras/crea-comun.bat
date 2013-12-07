@@ -1,0 +1,5 @@
+SET ALLUSERSDESKTOP="%ALLUSERSPROFILE%\Escritorio"
+
+cscript crea-comun.vbs
+
+copy F.COMUN.LNK %ALLUSERSDESKTOP%
