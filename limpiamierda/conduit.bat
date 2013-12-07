@@ -1,2 +1,5 @@
 ::conduitengine
-"%programfiles%\ConduitEngine\ConduitEngineUninstall.exe"
+IF EXIST "%PROGRAMFILES%\ConduitEngine\ConduitEngineUninstall.exe" ^
+         "%PROGRAMFILES%\ConduitEngine\ConduitEngineUninstall.exe"
+
+exit
