@@ -1,3 +1,9 @@
+::OFFICE XP
+SET OFFICE10_HOME=%ProgramFiles%\Microsoft Office\OFFICE11
+IF EXIST "%OFFICE10_HOME%\winword.exe"  "%OFFICE10_HOME%\winword.exe" /r
+IF EXIST "%OFFICE10_HOME%\excel.exe"    "%OFFICE10_HOME%\excel.exe" /regserver
+IF EXIST "%OFFICE10_HOME%\powerpnt.exe" "%OFFICE10_HOME%\excel.exe" /regserver
+
 ::OFFICE 2003
 SET OFFICE11_HOME=%ProgramFiles%\Microsoft Office\OFFICE11
 IF EXIST "%OFFICE11_HOME%\winword.exe"  "%OFFICE11_HOME%\winword.exe" /r
