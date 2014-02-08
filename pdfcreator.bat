@@ -7,4 +7,4 @@ if exist "%PROGRAMFILES%\PDFCreator\unins001.exe" "%PROGRAMFILES%\PDFCreator\uni
 
 
 :: Install PDFCreator
-pdfcreator-1.7.1.setup.exe /SILENT /LOADINF="PDFCreator.ini" /NORESTART
+pdfcreator-1.7.2.setup.exe /VERYSILENT /LOADINF="PDFCreator.ini" /NORESTART
