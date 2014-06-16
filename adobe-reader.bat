@@ -1,7 +1,15 @@
 :: OPTIONAL: Install Adobe Reader 
 
-:: This is the actual installer, added the patch too
-adberdr11000_esn.msi PATCH="adberdrupd11006.msp" REBOOT=ReallySuppress
+::Uninstall Old versions of Adobe Reader XI
+: 10.1.x
+MsiExec.exe /qn /norestart /x {AC76BA86-7AD7-1034-7B44-AA1000000001}
+:: 11.0.X
+MsiExec.exe /qn /norestart /x {AC76BA86-7AD7-1034-7B44-AB0000000001}
+:: 11.0.X MUI
+MsiExec.exe /qn /norestart /x {AC76BA86-7AD7-FFFF-7B44-AB0000000001}
+
+AdbeRdr11007_es_ES.exe /msi /qn REMOVE_PREVIOUS=YES DISABLE_ARM_SERVICE_INSTALL=1 DISABLEDESKTOPSHORTCUT=1 EULA_ACCEPT=YES
+
 
 :: Please do not start anything unless necesary
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /f /v "Adobe ARM"
@@ -10,4 +18,4 @@ reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /f /v "Adobe Reade
 :: Accept EULA
 reg add "HKLM\SOFTWARE\Adobe\Acrobat Reader\11.0\AdobeViewer" /f /v "EULA" /t REG_DWORD /d 1
 
-del "%allusersprofile%\Escritorio\Adobe Reader XI.lnk"
+IF EXIST "%allusersprofile%\Escritorio\Adobe Reader XI.lnk" del "%allusersprofile%\Escritorio\Adobe Reader XI.lnk"
