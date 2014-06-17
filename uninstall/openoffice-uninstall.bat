@@ -1,5 +1,10 @@
 ::Remove OpenOffice
 
+::StarOffice 8
+msiexec /qn /norestart /x {4BC1CB2B-FDCE-4DB4-A557-BA8127569B0D}
+msiexec /qn /norestart /x {D3737623-7FB5-443C-BA4A-023F2D2BC5A4}
+::OpenOffice.org 1.0 
+msiexec /qn /norestart /x {CE38B24E-4146-4DAC-AD4E-4EC8BF24C261}
 ::OpenOffice.org 2.0 
 msiexec /qn /norestart /x {75852F49-2CAF-443F-B7C2-53DE5847DE56}
 msiexec /qn /norestart /x {015766A8-EC67-4DCF-9163-3E973C139357}
@@ -9,11 +14,13 @@ msiexec /qn /norestart /x {51F86E9B-0D0D-4080-BD70-9B0C275ABD5E}
 ::OpenOffice.org 2.3 
 msiexec /qn /norestart /x {138049E9-E220-4410-BF0C-B35D26FF9EBD}
 msiexec /qn /norestart /x {83C03FBE-4492-4133-BBAB-421CD88ADA32}
+msiexec /qn /norestart /x {9D8D7B00-10BC-460E-978F-32410743962E}
 
 ::OpenOffice.org 2.4 
 msiexec /qn /norestart /x {F87A8E11-02A4-4875-A3A5-5961081B0E4E}
 msiexec /qn /norestart /x {2BB8FBB4-CFF9-434E-AA0A-40F5379C1602}
 msiexec /qn /norestart /x {4FF98D1F-2A07-49D3-8CB5-E65C47CAFE13}
+msiexec /qn /norestart /x {3148D1E5-BC1B-4B98-80C8-77234722BF2D}
 
 :: OpenOffice 3.0 / 3.0.1
 msiexec /qn /norestart /x {E42E4162-46B9-43BC-9FE2-1BBE772CC494}
