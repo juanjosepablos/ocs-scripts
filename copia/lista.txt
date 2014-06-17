@@ -1,0 +1,14 @@
++ Escritorio/***
++ Desktop/***
++ Mis documentos/***
++ Documents/***
++ Favoritos/***
++ Favorites/***
++ Datos de programa
++ Datos de programa/Mozilla/***
++ Datos de programa/Thunderbird/***
++ AppData
++ AppData/Roaming
++ AppData/Roaming/Mozilla/***
++ AppData/Roaming/Thunderbird/***
+- ***
