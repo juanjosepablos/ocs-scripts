@@ -2,4 +2,4 @@
 
 "%PROGRAMFILES%\Mozilla Maintenance Service\uninstall.exe" /S
 
-firefox-2420esr-esn.exe -ms -ira
+firefox-2460esr-esn.exe -ms -ira
