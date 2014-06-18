@@ -9,14 +9,15 @@ start avg-toolbar.bat
 "%PROGRAMFILES%\Amazon Browser Bar\uninstaller.exe"
 ::Babylon
 MsiExec.exe /qn /norestart /x {83AA2913-C123-4146-85BD-AD8F93971D39}
+MsiExec.exe /qn /norestart /x {E55E7026-EF2A-4A17-AAA7-DB98EA3FD1B1}
 FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\*") DO %%V\uninstall.exe
 FOR /D %%V IN ("%PROGRAMFILES%\BabylonToolbar\BabylonToolbar\*") DO %%V\uninstall.exe
 "%PROGRAMFILES%\Babylon\Babylon-Pro\Utils\uninstbb.exe"
-MsiExec.exe /qn /norestart /x {E55E7026-EF2A-4A17-AAA7-DB98EA3FD1B1}
 ::BitGuard
 start bitguard.bat
 ::Bing
 MsiExec.exe /qn /norestart /x {C28D96C0-6A90-459E-A077-A6706F4EC0FC}
+MsiExec.exe /qn /norestart /x {B4089055-D468-45A4-A6BA-5A138DD715FC}
 ::Bueno Search
 %APPDATA%\BabSolution\Shared\GUninstaller.exe" -key "Bueno Chrome Toolbar" -rmkey -rmbus "Bueno Chrome Toolbar" -ask -plgdll NTRedirect -nontfy
 ::BrowserDefender
@@ -75,7 +76,7 @@ start google-toolbar.bat
 "C:\Windows\system32\WNLT\Installation\uninstaller.exe"
 ::Iminent
 start iminent-toolbar.bat
-MsiExec.exe /X{4BD8E034-E0F4-4509-A753-467A8E854CD8}
+MsiExec.exe /qn /norestart /x {4BD8E034-E0F4-4509-A753-467A8E854CD8}
 
 MsiExec.exe /qn /norestart /x {973DD1DF-WD51D-64BB-B6AC-D56617D133C1}
 MsiExec.exe /qn /norestart /x {A6E71E28-43CB-423E-B415-B7C00D77902E}
@@ -86,6 +87,8 @@ MsiExec.exe /qn /norestart /x {A6E71E28-43CB-423E-B415-B7C00D77902E}
 "%PROGRAMFILES%\iLivid\uninstall.exe"
 ::LyricsSay
 "%PROGRAMFILES(x86)%\LyricsSay-1\Uninstall.exe" /fromcontrolpanel=1
+::McAfee Security Scan
+"%PROGRAMFILES%\McAfee Security Scan\uninstall.exe"
 ::Mediago
 MsiExec.exe /qn /norestart /x {A4F094CE-9B05-FB0C-DD73-A85DE5D8D283}
 ::MediaBar
@@ -118,6 +121,8 @@ MsiExec.exe /qn /norestart /x {199624B4-6BC0-48C2-AB7E-9AB90B249CD7}
 "%PROGRAMFILES%\RegClean Pro\unins000.exe" /VERYSILENT
 ::SHARES Toolbar
 "%PROGRAMFILES%\shARES\UNWISE.exe" /U "%PROGRAMFILES%\shARES\INSTALL.LOG"
+::Skype Toolbars
+MsiExec.exe /qn /norestart /x {981029E0-7FC9-4CF3-AB39-6F133621921A}
 ::Software Plate
 "%PROGRAMFILES%\Software Plate\uninstall.exe"
 ::Speedupmypc
@@ -174,7 +179,7 @@ MsiExec.exe /qn /norestart /X{020D8396-D6D9-4B53-A9A1-83C47E2E27AA}
 "%ALLUSERSPROFILE%\Datos de programa\Tarma Installer\{889DF117-14D1-44EE-9F31-C5FB5D47F68B}\Setup.exe" /remove /q
 "%ALLUSERSPROFILE%\Tarma Installer\{889DF117-14D1-44EE-9F31-C5FB5D47F68B}\Setup.exe" /remove /q
 
-reg export HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall uninstall.reg
-reg export HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall uninstall7.reg
+reg export HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall %TEMP%\uninstall.reg
+reg export HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall %TEMP%\uninstall7.reg
 
 popd
